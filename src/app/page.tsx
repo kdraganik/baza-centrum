@@ -30,6 +30,12 @@ export default function Home() {
           height={67}
           priority
         />
+        <a
+          className={styles.registration}
+          href="https://eventree.pl/sienna/baza-centrum-2026"
+        >
+          <span className={styles.registrationLabel}>rejestracja</span>
+        </a>
       </div>
 
       <Image

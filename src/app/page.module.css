@@ -15,7 +15,6 @@
 }
 
 .event {
-  position: relative;
   z-index: 1;
   display: flex;
   width: min(80vw, 860px);
@@ -29,6 +28,44 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.registration {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65em 1.15em 0.55em;
+  border: 1.5px solid #fffd00;
+  border-radius: 9999px;
+  background: transparent;
+  color: #fffd00;
+  font-family: "Amelie Fierce", var(--font-sans);
+  font-size: clamp(1.5rem, 2.025vw, 2.025rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  transform: translate(-50%, -50%);
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.registration:hover,
+.registration:focus-visible {
+  background: #fffd00;
+  color: transparent;
+}
+
+.registration:hover .registrationLabel,
+.registration:focus-visible .registrationLabel {
+  background: url("/baza-bg.png") center / cover fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {

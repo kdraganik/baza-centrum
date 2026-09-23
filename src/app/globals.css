@@ -1,5 +1,13 @@
 @import url("https://use.typekit.net/eic3fhp.css");
 
+@font-face {
+  font-family: "Amelie Fierce";
+  src: url("/AmelieFierce-Regular.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --color-dark: #231f20;
   --color-light: #e8e3e0;
